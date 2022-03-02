@@ -1,0 +1,10 @@
+-Create a bucket using the domain name you bought: (rtchatchouang.com) 
+-select your AWS region then create the bucket 
+Upload your files to your bucket.
+Once you are done creating your bucket, go to :
+-permissions and enable block public access 
+-Bucket policy: edit the bucket policy and rename the bucket name.
+Go to properties and scroll all the way down and copy under static website hosting and copy the bucket website endpoint link and open it on a different tab.
+So now the website is hosted on S3
+
+But this is not enough because you can’t share the 

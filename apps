@@ -1,0 +1,16 @@
+To install Nginx
+sudo apt install nginx
+
+To install apache
+sudo apt install apache2
+
+
+To install python
+sudo apt install python3
+
+to install Java 
+sudo apt install openjdk-11-jdk -y
+
+Run command:
+java -version
+Python —version or python —version

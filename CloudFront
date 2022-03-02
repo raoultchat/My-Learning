@@ -1,0 +1,7 @@
+Create a cloud front distribution 
+Origin domain :  type your S3 without  (https// )
+Redirect HTTP to HTTPS
+Alternative domain name: write domain name 
+Custom SSL certificate: choose your certificate 
+Then create distribution.
+

@@ -1,0 +1,4 @@
+Click on my product 
+Click on manage DNS:
+Name servers: enter my own name server 
+Go back to Route 53 and copy the route one at the time and paste it on name server. You do it with all the other servers and save them.

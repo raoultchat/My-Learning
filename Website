@@ -1,0 +1,57 @@
+S3
+
+-Create a bucket using the domain name you bought: (rtchatchouang.com) 
+-select your AWS region then create the bucket 
+Upload your files to your bucket.
+Once you are done creating your bucket, go to :
+-permissions and enable block public access 
+-Bucket policy: edit the bucket policy and rename the bucket name.
+Go to properties and scroll all the way down and copy under static website hosting and copy the bucket website endpoint link and open it on a different tab.
+So now the website is hosted on S3
+
+But this is not enough because you can’t share the 
+
+
+Route 53:
+
+We can buy or register a domain from Route 53  will need a domain name: from GoDaddy or Amazon 
+- Register domain: rtchatchouang.com from Amazon 
+- Route 53 helps you connect your S3 to your endpoint to the internet ( add a middle service through which you connect your the domain name you bought to your endpoint to the internet) 
+Route 53 helps you to make sure that everything you have forwarded from S3 is available to internet and all over the world by lowering the latency. By latency here we mean how quickly your website react when it’s opened on different part of the world. 
+By latency we mean mapping all the records for the domain so that whenever you open the website anywhere you won’t find any latency.
+- Faut Tolerent: it provides a fault tolerance architecture. It they want to hack your website Route 53 will prevent that from happening.The security of your domain is your first priority. 
+
+- Create host zone 
+
+
+Go to your domain: GoDaddy in this case
+
+Click on my product 
+Click on manage DNS:
+Name servers: enter my own name server 
+Go back to Route 53 and copy the route one at the time and paste it on name server. You do it with all the other servers and save them.
+
+
+ACM: Certificate Manager
+
+Request A certificate 
+Write your domain name on the fully qualified domain name and request the certificate .
+Then view certificate and record the certificate in Route 53 
+
+CloudFront: 
+
+Create a cloud front distribution 
+Origin domain :  type your S3 without  (https// )
+Redirect HTTP to HTTPS
+Alternative domain name: write domain name 
+Custom SSL certificate: choose your certificate 
+Then create distribution.
+
+Route 53:
+Go to DNS management and click on hosted zone 
+Click on your zone and create a record 
+Then click on alias and reserve:
+Alias to cloudfront distribution 
+Chose your distribution and create a record.
+
+To test it go to Incognito tab and write your domain name.
