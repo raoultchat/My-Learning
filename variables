@@ -1,0 +1,22 @@
+https://www.terraform.io/language/values/variables
+
+Provider.tf 
+provider "aws" { region = "ap-south-1" shared_credentials_file = 
+"/Users/mayank/.aws/creds" profile = "myprofile" 
+} 
+
+Resource.tf 
+resource “aws_instance” “web” { ami = var.ec2_ami instance_type = var.ec2_instance_type tags = { 
+Name = “IAAC” } 
+} 
+
+Variable.tf 
+variable "ec2_ami" { 
+type = string 
+description = "the value for my ami in ec2 instance" 
+} variable "ec2_instance_type"   type = string description = "instance type of my ec2" 
+} 
+Terraform.tfvars
+ ec2_ami = "ami-0e7a875609d14906f" 
+ec2_instance_type = "t2.micro" 
+

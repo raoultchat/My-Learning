@@ -1,0 +1,10 @@
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
+}
+
+
+
+The provider code:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs

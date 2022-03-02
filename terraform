@@ -1,0 +1,20 @@
+Run: mkdir tft to create TF
+Run: cd tft
+Run: touch provider.tf resource.tf to create the file
+Run vi provider.tf resource.tf to edit the file
+Run: terraform init to initialize TF 
+Run: terraform plan to see what you have inside (to plan)
+Run: terraform apply it will deploy EC2 instance (to apply)
+Run: to change the instance go to your resource edit the file, save it then apply.
+Run: terraform destroy: to destroy the infrastructure.
+
+Terraform apply  -auto-approve
+Terraform destroy -auto-approve
+
+Terraform: IAAC 
+AWS Provider
+IAAC - Infrastructure as a Code
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+
