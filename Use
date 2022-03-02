@@ -1,0 +1,9 @@
+Use cases for Git as a DevOps Engineer:
+
+- The first use case Is when working with IAAC ( Infrastructure as a code concept) if you are working with developers team that is deploying their application such (deployment of Kubernetes) you will be responsible for creating Kubernetes files (volumes , databases, yaml chart or other configurations) Or if your Kubernetes is deployed on AWS, in order for you to connect or communicate  with  AWS and manage the services in AWS , you don’t of that manually, rather you will use automation tools like Terraform or Ansible for deployment or files configuration. Also if you have some Bash and Python scripts configuration tasks. So you want to tack the history of changes, secure the code in one place Shareable file for DevOps team.
+
+- The second use case is when you are working with CI/CD Pipeline and build automation: the concept of CI/CD or automation is to checkout code, test and build application based on the code. This means that we need integration for build automation tool with application git repo and we need some git commands specific to git automation. I am responsible for setting up integration with build automation tool and git repository 
+
+/var/folders/pr/cyl3nwwx497bfff__2j8znzm0000gn/T/com.apple.Notes/HardLinkURLTemp/83050666-C75A-4E33-8F99-AEECCB5A8607/1646007086/GIT\ for\ DevOps.png 
+
+/var/folders/pr/cyl3nwwx497bfff__2j8znzm0000gn/T/com.apple.Notes/HardLinkURLTemp/74049543-E27B-4628-BF20-62AEE75DD0C6/1646007086/GIT\ for\ DevOps.png 
