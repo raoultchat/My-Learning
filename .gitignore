@@ -1,0 +1,9 @@
+#our local .terraform directory
+.terraform/*
+
+#our local tft state files
+*.tfstate
+*.tfstate.*
+
+#our vs code
+*.vscode
